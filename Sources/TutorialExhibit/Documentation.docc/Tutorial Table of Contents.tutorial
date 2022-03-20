@@ -1,0 +1,42 @@
+@Tutorials(name: "The Tutorial Name") {
+    @Intro(title: "Intro Name") {
+        Here is some text about it
+        
+        @Image(source: "dice.png", alt: "File Alt Name Again")
+    }
+    
+    @Section(title: "Create a new project and add SlothCreator") {
+            @Steps {
+                @Step {
+                    Create a new project using the iOS App template.
+                    
+                    @Image(source: "placeholder-image.png", alt: "A screenshot of the template selector in Xcode. In the top row, iOS is selected as the platform. In the Application section, App is selected as the template; there's a highlight placed over the Next button at the lower-right of the sheet.")
+                }
+            }
+        }
+    
+    @Chapter(name: "Chapter Name") {
+        Chapter text
+        
+        @Image(source: "dice.png", alt: "File Alt Name")
+        
+        @TutorialReference(tutorial: "doc:GapAnalyticsArticle")
+        @TutorialReference(tutorial: "doc:MyTutorial")
+    }
+
+    @Resources {
+           Explore more resources for learning about sloths.
+
+           @Videos(destination: "https://www.example.com/sloth-videos/") {
+               Watch cute videos of sloths climbing, eating, and sleeping.
+
+               - [Treetop Breakfast](https://www.example.com/sloth-videos/breakfast/)
+               - [Slow Ascent](https://www.example.com/sloth-videos/climb/)
+               - [Rest Time](https://www.example.com/sloth-videos/snoozing/)
+           }
+
+           @Downloads(destination: "https://www.example.com/images/sloth-wallpaper/") {
+               Download the cutest sloth wallpaper for your iPhone, iPad, or Mac.
+           }
+       }
+   }

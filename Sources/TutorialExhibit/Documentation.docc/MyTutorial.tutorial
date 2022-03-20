@@ -1,0 +1,39 @@
+@Tutorial(time: 35) {
+    @Intro(title: "Intro Title") {
+        Intro body text with an awesome description
+        
+        @Image(source: "dice.png", alt: "Some awesome alt text")
+    }
+    
+    @Section(title: "Learn how to use the Mock") {
+        @ContentAndMedia {
+            Here is an awesome content and media area
+            
+            @Image(source: "pencil.png", alt: "accessible description")
+        }
+        
+        @Steps {
+            @Step {
+                This is the interesting step
+                
+                @Image(source: "dice.png", alt: "accessible description")
+            }   
+            
+            @Step {
+                This is a less interesting step
+                
+                @Code(name: "TutorialExhibit.swift", file: "TutorialExhibit.swift") {
+                    @Image(source: "test.png", alt: "accessible description")
+                }
+            }
+            
+            @Step {
+                This is an interesting step
+                
+                @Code(name: "TutorialExhibit.swift", file: "TutorialExhibit2.swift") {
+                    @Image(source: "test.png", alt: "accessible description")
+                }
+            }
+        }
+    }
+}
